@@ -1,0 +1,59 @@
+.notification-container {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+    vertical-align: baseline;
+    text-align: start;
+    border-width: 0;
+}
+
+.notification-delete-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 60%;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            color: #ff8a84;
+        }
+    }
+}
+
+.notification-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.notification-tooltip {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}

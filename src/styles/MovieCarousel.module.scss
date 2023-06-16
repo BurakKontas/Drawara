@@ -1,0 +1,31 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.lastest-movies-container {
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 50px 30px 50px;
+    color: white;
+
+}
+
+.lastest-movies-carousel-container {
+    height: fit-content;
+}
+
+.lastest-movies-carousel-arrow {
+    background-color: rgba(20, 20, 20, 0.2);
+    border-width: 0;
+    height: 100%;
+    -webkit-backdrop-filter: blur(.625em);
+    backdrop-filter: blur(0.625em);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.lastest-movies-carousel-arrow p {
+    color: white;
+    font-size: 30px;
+}
+
+.lastest-movies-carousel-arrow:hover {
+    background-color: rgba(20, 20, 20, 0.7);
+}

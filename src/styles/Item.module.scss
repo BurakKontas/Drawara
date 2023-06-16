@@ -1,0 +1,295 @@
+.parent img {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 1080px;
+    resize: horizontal;
+    // margin-left: 250px;
+}
+
+.item {
+    position: absolute;
+    background: linear-gradient(90deg, #000, #141414 25%, rgba(83, 100, 141, 0));
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    padding: 175px 100px 175px 100px;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.logo {
+    border-left: 0.313em solid var(--iq-primary);
+    padding: 0.8em 0.625em 0.625em 0.938em;
+    background: linear-gradient(270deg, rgba(11, 1, 2, 0), rgba(255, 55, 65, .3));
+    width: 15.938em;
+    position: relative;
+    margin-top: 1.375em;
+    display: block;
+    height: 5em;
+
+    img {
+        width: 6.2em;
+        max-width: 100%;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+}
+
+
+#title {
+    background: url(https://templates.iqonic.design/streamit/frontend/react/build/static/media/texure.5fd81b0e.jpg);
+    background-repeat: repeat-x;
+    width: 1920px;
+    background-position: 100% 100%;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1.34688px;
+    font-size: 2.5em;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase !important;
+    font-weight: bolder;
+    line-height: 1.2;
+    margin-block-end: 0.23em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 600px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#rating {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+}
+
+#description {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.66em;
+    box-sizing: border-box;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.15em;
+    text-align: left;
+    max-width: 25%;
+    max-width: 600px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+}
+
+#about {
+    font-size: 15.75px;
+    font-family: "Roboto", sans-serif;
+    color: #D1D0CF;
+    margin: 10px 0px 10px 0px;
+
+    h6 {
+        color: #E50914;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        margin-right: 3px;
+    }
+
+    ;
+
+    .about-item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+        overflow: hidden;
+        max-width: 600px;
+    }
+
+    ;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 10px 0px 10px 0px;
+}
+
+.playnow-button {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border-width: 0;
+    padding: 0;
+
+    .stroke-svg {
+        height: 55px;
+        width: 150px;
+        fill: none;
+        stroke-width: 5;
+
+        .o1 {
+            stroke: rgba(#bb040d, 0.7);
+            fill: #bb040d;
+            transition: all 1s ease-in-out;
+        }
+
+        .o2 {
+            stroke: white;
+            stroke-dasharray: 20 420;
+            stroke-dashoffset: 20;
+            transition: all 1s ease-in-out;
+        }
+    }
+
+    .title-span {
+        position: absolute;
+        margin: auto 0;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    &:hover {
+        .o1 {
+            fill: rgba(#85040a, 0.3);
+        }
+
+        .o2 {
+            stroke-dashoffset: -420;
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, .076, 1)) {
+    transition: $property $duration $ease;
+}
+
+.more-details-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+    &.learn-more {
+        width: 12rem;
+        height: auto;
+
+        .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $black;
+            border-radius: 1.625rem;
+
+            .icon {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $white;
+
+                &.arrow {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: -0.25rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid #fff;
+                        border-right: 0.125rem solid #fff;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 6px 0 0 1.85rem;
+            color: $black;
+            font-weight: bold;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &:hover {
+        .circle {
+            width: 100%;
+
+            .icon {
+                &.arrow {
+                    background: $white;
+                    transform: translate(1rem, 0);
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .button-text {
+            color: $white;
+        }
+    }
+}
